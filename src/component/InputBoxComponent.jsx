@@ -10,13 +10,13 @@ function InputBoxComponent() {
     setInput(useRefInput.current.value);
     console.log(Inputs);
   }
-  const displayInParagragth= event=>{
-    setValue(event.target.value);
-    // console.log(value);
-  }
+  // const displayInParagragth= event=>{
+  //   setValue(event.target.value);
+  //   // console.log(value);
+  // }
   return (
     <div>
-      <input type='text'onChange={displayInParagragth}/>
+      <input type='text'onChange={(event)=>setValue(event.target.value)}/>
       <p>{value}</p>
       <input type='text' ref={useRefInput}></input>
       <button onClick={printMessage}>Hi</button>

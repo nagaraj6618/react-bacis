@@ -1,27 +1,24 @@
+
 import React, { Component } from 'react'
 
- class InputTextBoxComponent extends Component {
+class InputTextBoxComponent extends Component {
   constructor(props) {
     super(props)
   
     this.state = {
-       message:'',
-       messageValue:''
+      message:''   
     }
-  
   }
-changeMessageHandler=event=>{
-  this.setState({
-    message:event.target.value
-  })
-}
-
+  eventHandler=event=>{
+    this.setState({
+      message:event.target.value
+    })
+  }
   render() {
     return (
       <div>
-        <input type='text' onChange={this.changeMessageHandler}></input>
+        <input type='text' onChange={this.eventHandler}/> 
         <p>{this.state.message}</p>
-        
       </div>
     )
   }

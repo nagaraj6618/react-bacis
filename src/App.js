@@ -7,6 +7,7 @@ import CounterUsingClassComponent from './component/CounterUsingClassComponent';
 import EventComponent from './component/EventComponent';
 import InputBoxComponent from './component/InputBoxComponent';
 import ShowHideElementComponent from './component/ShowHideElementComponent';
+import AxiosComponent from './component/AxiosComponent';
 
 
 
@@ -52,7 +53,7 @@ function App() {
   <Route exact path='/event' element={  <EventComponent/>}></Route>
     </Routes>
     </BrowserRouter>
-    
+    <AxiosComponent/>
     </div>
   );
 }
